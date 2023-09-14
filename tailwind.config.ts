@@ -23,6 +23,7 @@ const config: Config = {
         "color-secondary": "#161923",
         "header-bg": "rgba(27, 27, 27, .26)",
         "header-border": "rgba(255, 255, 255, .1)",
+        "footer-divider": "#2b2b2b",
       },
     },
   },

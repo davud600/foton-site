@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="bg-header-bg border-b-header-border border-b sticky top-0 h-[60px]">
+    <nav className="bg-header-bg border-b-header-border border-b fixed w-screen top-0 h-[60px] backdrop-blur-lg">
       {/* Desktop */}
       <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:flex hidden">
         <img src="" alt="logo" />
@@ -33,7 +33,7 @@ export default function Header() {
       </div>
 
       {/* Mobile */}
-      <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:hidden flex backdrop-blur-2xl">
+      <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:hidden flex">
         <img src="" alt="logo" />
         <div
           ref={mobileLinksContainerRef}
