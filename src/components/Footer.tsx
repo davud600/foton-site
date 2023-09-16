@@ -1,10 +1,12 @@
+import Image from 'next/image'
+
 export default function Footer() {
   return (
-    <footer className="w-screen bg-dark-primary">
+    <footer className="w-[90vw] bg-dark-primary ml-auto mr-auto">
       <div className="justify-between items-center flex flex-col p-8 h-full max-w-[1340px] ml-auto mr-auto">
         <div className="flex md:flex-row flex-col w-full justify-between">
           <div className="flex flex-col md:w-1/2 w-full gap-4">
-            <img src="" alt="logo" />
+            <Image src="" alt="logo" />
             <span className="text-light-secondary max-w-[35ch] text-[15px]">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
               placeat soluta recusandae ducimus animi quibusdam, amet aliquam,
@@ -93,5 +95,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
