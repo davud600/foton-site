@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="w-[90vw] bg-dark-primary ml-auto mr-auto">
-      <div className="justify-between items-center flex flex-col p-8 h-full max-w-[1340px] ml-auto mr-auto">
+    <footer className="w-[95vw] md:w-[90vw] bg-dark-primary ml-auto mr-auto">
+      <div className="justify-between items-center flex flex-col p-3 md:p-8 h-full max-w-[1340px] ml-auto mr-auto">
         <div className="flex md:flex-row flex-col w-full justify-between">
           <div className="flex flex-col md:w-1/2 w-full gap-4">
             <Image src="" alt="logo" />
@@ -15,72 +15,63 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex md:flex-row flex-col md:w-1/2 md:mt-0 w-full justify-start md:ml-48 md:gap-16">
-            <div className="flex flex-col gap-2 md:mt-0 mt-12">
-              <span className="text-light-primary tracking-wide">LINKS</span>
+            <div className="flex flex-col gap-2 md:mt-0 mt-12 w-fit whitespace-nowrap">
+              <span className="text-light-primary tracking-wide">COMPANY</span>
               <div className="flex flex-col gap-2 text-[15px]">
                 <a
-                  href=""
+                  href="#home"
                   className="hover:text-light-primary text-light-secondary transition-all"
                 >
-                  link 1
+                  Home
                 </a>
                 <a
-                  href=""
+                  href="#services"
                   className="hover:text-light-primary text-light-secondary transition-all"
                 >
-                  link 2
+                  Services
                 </a>
                 <a
-                  href=""
+                  href="#projects"
                   className="hover:text-light-primary text-light-secondary transition-all"
                 >
-                  link 3
+                  Previous Work
+                </a>
+                <a
+                  href="#about"
+                  className="hover:text-light-primary text-light-secondary transition-all"
+                >
+                  About Us
+                </a>
+                <a
+                  href="#contact"
+                  className="hover:text-light-primary text-light-secondary transition-all"
+                >
+                  Contact Us
                 </a>
               </div>
             </div>
-            <div className="flex flex-col gap-2 md:mt-0 mt-12">
-              <span className="text-light-primary tracking-wide">LINKS</span>
+            <div className="flex flex-col gap-2 md:mt-0 mt-12 w-fit whitespace-nowrap">
+              <span className="text-light-primary tracking-wide">
+                COMMUNITY
+              </span>
               <div className="flex flex-col gap-2 text-[15px]">
                 <a
-                  href=""
+                  href="https://www.linkedin.com"
+                  target="_blank"
                   className="hover:text-light-primary text-light-secondary transition-all"
                 >
-                  link 1
-                </a>
-                <a
-                  href=""
-                  className="hover:text-light-primary text-light-secondary transition-all"
-                >
-                  link 2
-                </a>
-                <a
-                  href=""
-                  className="hover:text-light-primary text-light-secondary transition-all"
-                >
-                  link 3
+                  LinkedIn
                 </a>
               </div>
             </div>
-            <div className="flex flex-col gap-2 md:mt-0 mt-12">
-              <span className="text-light-primary tracking-wide">LINKS</span>
+            <div className="flex flex-col gap-2 md:mt-0 mt-12 w-fit whitespace-nowrap">
+              <span className="text-light-primary tracking-wide">LEGAL</span>
               <div className="flex flex-col gap-2 text-[15px]">
                 <a
-                  href=""
+                  href="/privacy"
                   className="hover:text-light-primary text-light-secondary transition-all"
                 >
-                  link 1
-                </a>
-                <a
-                  href=""
-                  className="hover:text-light-primary text-light-secondary transition-all"
-                >
-                  link 2
-                </a>
-                <a
-                  href=""
-                  className="hover:text-light-primary text-light-secondary transition-all"
-                >
-                  link 3
+                  Privacy Policy
                 </a>
               </div>
             </div>

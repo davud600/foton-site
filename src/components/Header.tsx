@@ -21,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <nav className="animate-fade bg-header-bg border-b-header-border border-b fixed w-screen top-0 h-[60px] backdrop-blur-lg">
+    <nav className="animate-fade bg-header-bg border-b-header-border border-b fixed z-20 w-screen top-0 h-[60px] backdrop-blur-lg">
       {/* Desktop */}
       <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:flex hidden">
         <Image src="" alt="logo" />
@@ -54,7 +54,7 @@ export default function Header() {
           <a href="#services">Our Services</a>
           <a href="#projects">Our Work</a>
           <a href="#about">About us</a>
-          <a href="#about">Contact us</a>
+          <a href="#contact">Contact us</a>
         </div>
         <button onClick={toggleMobileNav}>
           <svg
