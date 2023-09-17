@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,21 +22,10 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: IBM Plex Sans Hebrew, sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-h1 {
-  font-family: 'Outfit', sans-serif;
-}
-h2 {
-  font-family: 'Outfit', sans-serif;
-}
-h3 {
-  font-family: 'Outfit', sans-serif;
 }

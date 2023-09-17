@@ -1,10 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
+import { ibm_plex_sans } from '@/utils/fonts'
 
 export const metadata: Metadata = {
   title: 'Software Solutions',
@@ -18,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={ibm_plex_sans.className}>
         <Header />
 
         <main className="flex flex-col items-center justify-between bg-neutral-800 overflow-y-auto">

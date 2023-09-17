@@ -21,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <nav className="bg-header-bg border-b-header-border border-b fixed w-screen top-0 h-[60px] backdrop-blur-lg">
+    <nav className="animate-fade bg-header-bg border-b-header-border border-b fixed w-screen top-0 h-[60px] backdrop-blur-lg">
       {/* Desktop */}
       <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:flex hidden">
         <Image src="" alt="logo" />
@@ -33,7 +33,7 @@ export default function Header() {
         </div>
         <a
           href="#contact"
-          className="bg-light-primary px-5 py-[0.35rem] text-[15px] text-dark-primary font-semibold rounded-md hover:bg-light-secondary hvoer:text-dark-secondary transition-all"
+          className="bg-light-primary px-5 py-[0.35rem] text-[15px] text-dark-primary font-[500] rounded-md hover:bg-[#e0e0e0] hvoer:text-dark-secondary transition-all duration-300"
         >
           Contact
         </a>
@@ -64,7 +64,7 @@ export default function Header() {
             width="100"
             height="100"
             viewBox="0 0 50 50"
-            className="fill-white h-6 w-6"
+            className="fill-white md:h-6 md:w-6 h-5 w-5"
           >
             <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
           </svg>
