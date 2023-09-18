@@ -8,11 +8,11 @@ export default function Home() {
         <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[15%] mt-[40%]">
           <h1
             style={outfit.style}
-            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+            className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[6rem]"
           >
             Elevate your software game. with us
           </h1>
-          <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
+          <p className="text-center text-[15px] text-light-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
             adipisci rerum cupiditate optio reprehenderit dolore incidunt
             veritatis, aut nihil, exercitationem molestiae odit temporibus
@@ -42,28 +42,65 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="services" className="min-h-screen w-full bg-dark-background">
-        <div className="flex justify-center items-center w-full h-full relative mt-[200px] md:mt-[115px]">
+      <section id="services" className="py-24 w-full bg-dark-background">
+        <div className="flex justify-center items-center w-full h-full relative">
           <Image
             src="/macbook.webp"
             width={2202}
             height={1262}
-            className="w-[85vw] h-auto relative"
+            className="h-[65vh] w-auto relative object-scale-down"
             alt="macbook"
             objectFit="scale-down"
           />
         </div>
       </section>
-      <section id="projects"></section>
-      <section id="about" className="min-h-screen w-full bg-dark-background">
-        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[25%] mt-[50%]">
+      <section id="projects" className="py-24 w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-4xl max-w-[90vw]">
           <h1
             style={outfit.style}
-            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+            className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[5rem]"
+          >
+            Some of our work.
+          </h1>
+          <div className="flex flex-col gap-4 justify-center items-center w-full">
+            <div className="flex md:flex-row flex-col justify-between w-full gap-24 items-center">
+              {/* Card */}
+              <div className="rounded-lg w-full md:w-1/2 h-[30rem] md:h-[35rem] bg-purple-400"></div>
+
+              {/* Info */}
+              <div className="flex w-full md:w-1/2 flex-col gap-8 items-start justify-center text-start">
+                <h1
+                  style={outfit.style}
+                  className="font-normal text-2xl md:font-[500] md:text-4xl tracking-wide !leading-[1.25] md:!leading-[3rem]"
+                >
+                  Payment Managing Dashboard
+                </h1>
+                <p className="text-[15px] text-light-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio adipisci rerum cupiditate optio reprehenderit
+                  dolore incidunt veritatis, aut nihil, exercitationem molestiae
+                  odit temporibus culpa, est quod quos accusamus ex voluptatum.
+                </p>
+                <a
+                  href="#"
+                  className="bg-btn-primary md:w-fit w-full text-center md:px-10 py-4 md:py-3 text-[15px] text-light-primary font-[500] rounded-md hover:bg-btn-secondary hvoer:text-dark-secondary transition-all duration-300"
+                >
+                  Button
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" className="py-24 w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw]">
+          <h1
+            style={outfit.style}
+            className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[5rem]"
           >
             About Us
           </h1>
-          <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
+          <p className="text-center text-[15px] text-light-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             itaque incidunt et consequatur magnam, rerum recusandae ipsam
             nesciunt soluta exercitationem quae sed repellendus provident, ipsum
@@ -71,11 +108,11 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="contact" className="min-h-screen w-full bg-dark-background">
-        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[10%] mt-[25%]">
+      <section id="contact" className="py-24 w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw]">
           <h1
             style={outfit.style}
-            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+            className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[5rem]"
           >
             Contact us
           </h1>
