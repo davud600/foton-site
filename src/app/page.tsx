@@ -1,113 +1,136 @@
+import { outfit } from '@/utils/fonts'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <section id="home" className="min-h-screen w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[15%] mt-[40%]">
+          <h1
+            style={outfit.style}
+            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Elevate your software game. with us
+          </h1>
+          <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            adipisci rerum cupiditate optio reprehenderit dolore incidunt
+            veritatis, aut nihil, exercitationem molestiae odit temporibus
+            culpa, est quod quos accusamus ex voluptatum.
+          </p>
+          <div className="flex md:flex-row flex-col justify-center gap-8 w-full my-10">
+            <a
+              href="#projects"
+              className="bg-transparent border text-center border-color-border-color-primary md:px-10 py-4 md:py-3 text-[15px] text-light-primary font-[500] rounded-md hover:bg-light-primary hover:text-dark-primary transition-all duration-300"
+            >
+              Other Action
+            </a>
+            <a
+              href="#services"
+              className="bg-btn-primary text-center md:px-10 py-4 md:py-3 text-[15px] text-light-primary font-[500] rounded-md hover:bg-btn-secondary hvoer:text-dark-secondary transition-all duration-300"
+            >
+              Call To Action
+            </a>
+          </div>
+          <div className="flex justify-center w-full">
+            <a
+              href="#"
+              className="text-base text-light-primary font-[500] underline underline-offset-2"
+            >
+              Link to redirect to somewhere
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      </section>
+      <section id="services" className="min-h-screen w-full bg-dark-background">
+        <div className="flex justify-center items-center w-full h-full relative mt-[200px] md:mt-[115px]">
+          <Image
+            src="/macbook.webp"
+            width={2202}
+            height={1262}
+            className="w-[85vw] h-auto relative"
+            alt="macbook"
+            objectFit="scale-down"
+          />
+        </div>
+      </section>
+      <section id="projects"></section>
+      <section id="about" className="min-h-screen w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[25%] mt-[50%]">
+          <h1
+            style={outfit.style}
+            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+          >
+            About Us
+          </h1>
+          <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+            itaque incidunt et consequatur magnam, rerum recusandae ipsam
+            nesciunt soluta exercitationem quae sed repellendus provident, ipsum
+            eaque eligendi! Maxime, quisquam molestiae!
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </div>
+      </section>
+      <section id="contact" className="min-h-screen w-full bg-dark-background">
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[10%] mt-[25%]">
+          <h1
+            style={outfit.style}
+            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+          >
+            Contact us
+          </h1>
+          <form action="" method="get" className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2 justify-start">
+              <label
+                htmlFor="email"
+                className="text-[17px] font-[300] text-light-secondary"
+              >
+                E-mail Address
+              </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                className="px-3 py-2 text-[17px] bg-dark-primary border border-light-secondary rounded-[0.2rem]"
+              />
+            </div>
+            <div className="flex flex-col gap-2 justify-start">
+              <label
+                htmlFor="subject"
+                className="text-[17px] font-[300] text-light-secondary"
+              >
+                Subject
+              </label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                className="px-3 py-2 text-[17px] bg-dark-primary border border-light-secondary rounded-[0.2rem]"
+              />
+            </div>
+            <div className="flex flex-col gap-2 justify-start">
+              <label
+                htmlFor="message"
+                className="text-[17px] font-[300] text-light-secondary"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                rows={4}
+                id="message"
+                className="px-3 py-2 text-[17px] bg-dark-primary border border-light-secondary rounded-[0.2rem]"
+              />
+            </div>
+            <div className="flex md:justify-start justify-center w-full">
+              <input
+                type="submit"
+                className="bg-btn-primary md:w-auto w-full cursor-pointer text-center md:px-10 py-4 md:py-3 text-base text-light-primary font-[500] rounded-md hover:bg-btn-secondary hvoer:text-dark-secondary transition-all duration-300"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </>
   )
 }
