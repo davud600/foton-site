@@ -10,7 +10,7 @@ export default function Home() {
             style={outfit.style}
             className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[6rem]"
           >
-            Elevate your software game. with us
+            Elevate your software game. With us.
           </h1>
           <p className="text-center text-[15px] text-light-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -43,12 +43,18 @@ export default function Home() {
         </div>
       </section>
       <section id="services" className="py-24 w-full bg-dark-background">
-        <div className="flex justify-center items-center w-full h-full relative">
+        <div className="flex flex-col justify-center items-center w-full h-full relative">
+          <h1
+            style={outfit.style}
+            className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[6rem]"
+          >
+            Our Services.
+          </h1>
           <Image
             src="/macbook.webp"
             width={2202}
             height={1262}
-            className="h-[65vh] w-auto relative object-scale-down"
+            className="h-[50vh] w-auto relative object-scale-down"
             alt="macbook"
             objectFit="scale-down"
           />
@@ -98,7 +104,7 @@ export default function Home() {
             style={outfit.style}
             className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[5rem]"
           >
-            About Us
+            About Us.
           </h1>
           <p className="text-center text-[15px] text-light-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -114,7 +120,7 @@ export default function Home() {
             style={outfit.style}
             className="font-normal text-3xl md:font-[500] md:text-[62px] text-center my-16 tracking-wide !leading-[1.25] md:!leading-[5rem]"
           >
-            Contact us
+            Contact Us.
           </h1>
           <form action="" method="get" className="flex flex-col gap-6">
             <div className="flex flex-col gap-2 justify-start">
