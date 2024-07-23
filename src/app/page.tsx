@@ -8,9 +8,11 @@ export default function Home() {
         <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[15%] mt-[40%]">
           <h1
             style={outfit.style}
-            className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
+            className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            Elevate your software game. with us
+            Follow the light.
+            <br />
+            with us
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio

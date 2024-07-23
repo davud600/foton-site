@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className="w-[95vw] md:w-[90vw] bg-dark-primary ml-auto mr-auto">
       <div className="justify-between items-center flex flex-col p-3 md:p-8 h-full max-w-[1340px] ml-auto mr-auto">

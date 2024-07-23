@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import Image from 'next/image'
 
-export default function Header() {
+export function Header() {
   const mobileLinksContainerRef = useRef<HTMLDivElement | null>(null)
 
   const toggleMobileNav = () => {
