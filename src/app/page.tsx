@@ -50,7 +50,7 @@ export default function Home() {
             src="/macbook.webp"
             width={2202}
             height={1262}
-            className="w-[85vw] h-auto relative"
+            className="w-[70vw] h-auto relative"
             alt="macbook"
             objectFit="scale-down"
           />
