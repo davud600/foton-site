@@ -7,7 +7,25 @@ import { CustomCursor } from '@/components/CustomCursor'
 
 export const metadata: Metadata = {
   title: 'Foton',
-  description: 'Foton in Kosovo',
+  description: 'Welcome to Foton in Kosovo.',
+  keywords:
+    'drone technology, multispectral imagery, Kosovo, agricultural data',
+  authors: [{ name: 'Foton LLC', url: 'https://foton-ks.com' }],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Foton',
+    description: 'Welcome to Foton in Kosovo.',
+    url: 'https://foton-ks.com',
+    siteName: 'Foton',
+    images: [
+      {
+        url: 'https://foton-ks.com/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Foton LLC - Innovative Insights from Above',
+      },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -20,11 +38,9 @@ export default function RootLayout({
       <body className={ibm_plex_sans.className}>
         <Header />
         <CustomCursor />
-
         <main className="flex flex-col items-center justify-between bg-neutral-800 overflow-y-auto">
           {children}
         </main>
-
         <Footer />
       </body>
     </html>

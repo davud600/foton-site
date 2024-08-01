@@ -4,21 +4,20 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <section id="home" className="min-h-screen w-full bg-dark-background">
-        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[15%] mt-[40%]">
+      <section
+        id="home"
+        className="min-h-[calc(100svh_-_61px)] flex flex-col justify-center items-center w-full bg-dark-background"
+      >
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw]">
           <h1
             style={outfit.style}
             className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            Follow the light.
-            <br />
-            with us
+            Innovative Insights from Above.
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            adipisci rerum cupiditate optio reprehenderit dolore incidunt
-            veritatis, aut nihil, exercitationem molestiae odit temporibus
-            culpa, est quod quos accusamus ex voluptatum.
+            Revolutionizing agriculture in Kosovo with research and other
+            experimental developments in the natural sciences and engineering.
           </p>
           <div className="flex md:flex-row flex-col justify-center gap-8 w-full my-10">
             <a
@@ -44,21 +43,30 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="services" className="min-h-screen w-full bg-dark-background">
-        <div className="flex justify-center items-center w-full h-full relative mt-[200px] md:mt-[115px]">
+      <section
+        id="services"
+        className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
+      >
+        <div className="flex justify-center items-center w-full h-full relative">
           <Image
             src="/macbook.webp"
             width={2202}
             height={1262}
-            className="w-[70vw] h-auto relative"
+            className="w-[95vw] md:w-[70vw] h-auto relative"
             alt="macbook"
             objectFit="scale-down"
           />
         </div>
       </section>
-      <section id="projects"></section>
-      <section id="about" className="min-h-screen w-full bg-dark-background">
-        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[25%] mt-[50%]">
+      <section
+        id="projects"
+        className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
+      ></section>
+      <section
+        id="about"
+        className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
+      >
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw]">
           <h1
             style={outfit.style}
             className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
@@ -66,15 +74,22 @@ export default function Home() {
             About Us
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            itaque incidunt et consequatur magnam, rerum recusandae ipsam
-            nesciunt soluta exercitationem quae sed repellendus provident, ipsum
-            eaque eligendi! Maxime, quisquam molestiae!
+            At Foton, we specialize in harnessing cutting-edge drone technology
+            and multispectral imagery to provide valuable insights for
+            agriculture. Our mission is to help farmers make informed decisions
+            and enhance their crop management through precise, data-driven
+            solutions. Based in Kosovo, we are dedicated to improving
+            agricultural practices and contributing to a more sustainable
+            future. Our team is committed to innovation, reliability, and
+            excellence in every flight.
           </p>
         </div>
       </section>
-      <section id="contact" className="min-h-screen w-full bg-dark-background">
-        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] md:mt-[10%] mt-[25%]">
+      <section
+        id="contact"
+        className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
+      >
+        <div className="ml-auto mr-auto md:max-w-lg max-w-[90vw] w-full">
           <h1
             style={outfit.style}
             className="animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"

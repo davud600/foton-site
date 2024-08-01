@@ -8,10 +8,8 @@ export function Footer() {
           <div className="flex flex-col md:w-1/2 w-full gap-4">
             <Image src="" alt="logo" />
             <span className="text-light-secondary max-w-[35ch] text-[15px]">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-              placeat soluta recusandae ducimus animi quibusdam, amet aliquam,
-              earum quam id quae laboriosam quos voluptatibus magni hic
-              cupiditate obcaecati quia accusantium.
+              Research and other experimental developments in the natural
+              sciences and engineering.
             </span>
           </div>
           <div className="flex md:flex-row flex-col md:w-1/2 md:mt-0 w-full justify-start md:ml-48 md:gap-16">
@@ -80,8 +78,7 @@ export function Footer() {
         <hr className="w-full bg-footer-divider border-none h-[1px] my-14" />
         <div className="flex w-full justify-start">
           <span className="text-light-primary">
-            © 2023 Software Solutions, Registered in Kosovo. All Rights
-            Reserved.
+            © 2024 Foton LLC, Registered in Kosovo. All Rights Reserved.
           </span>
         </div>
       </div>
