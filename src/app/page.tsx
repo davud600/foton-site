@@ -66,10 +66,10 @@ export default function Home() {
             Our Services
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            Our mission is to help farmers drastically increase their crops'
-            health, longevity and yield. We do that by utilizing our custom made
-            UAVs capable of autonomous flight, and combining that with
-            hyperspectral sensors that give us the raw electromagnetic data
+            Our mission is to help farmers drastically increase their
+            crops&apos; health, longevity and yield. We do that by utilizing our
+            custom made UAVs capable of autonomous flight, and combining that
+            with hyperspectral sensors that give us the raw electromagnetic data
             which we then process with various open source software like QGIS
             (Quantum Geographical Information System).
           </p>
