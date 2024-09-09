@@ -28,8 +28,8 @@ export function Header() {
           <Image src="" alt="logo" />
           <div className="flex items-center h-full gap-8 text-[15px]">
             <a href="#home">Home</a>
-            <a href="#services">Our Services</a>
-            <a href="#projects">Our Work</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Work</a>
             <a href="#about">About us</a>
           </div>
           <a

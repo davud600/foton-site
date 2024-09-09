@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: 'https://foton-ks.com/logo.png',
         width: 1200,
         height: 630,
-        alt: 'Foton LLC - Innovative Insights from Above',
+        alt: 'Foton LLC - Insights from above, and beyond.',
       },
     ],
   },
