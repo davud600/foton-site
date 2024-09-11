@@ -1,13 +1,13 @@
 .customCursor {
   position: fixed;
-  width: 300px;
-  height: 300px;
+  width: 225px;
+  height: 225px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(255, 255, 150, 0.013) 0%,
-    rgba(255, 255, 150, 0.0125) 5%,
-    rgba(255, 255, 150, 0.01225) 7.5%,
+    rgba(255, 255, 150, 0.015) 0%,
+    rgba(255, 255, 150, 0.0145) 5%,
+    rgba(255, 255, 150, 0.01425) 7.5%,
     rgba(255, 255, 150, 0.012) 10%,
     rgba(255, 255, 150, 0.0115) 12.5%,
     rgba(255, 255, 150, 0.011) 15%,

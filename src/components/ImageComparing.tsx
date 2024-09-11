@@ -1,18 +1,35 @@
 'use client'
 
+import { useLocale, useTranslations } from 'next-intl'
 import { useState } from 'react'
 import ReactCompareImage from 'react-compare-image'
 
 type ImageVariation = 'default' | 'false' | 'mi' | 'ndvi'
 
-const images = ['mirusha', 'radoniq']
+const images = ['mirusha', 'radoniqi', 'bjeshket', 'drini']
 
-const ImageTitles: Record<string, string> = {
-  mirusha: 'Mirusha Waterfalls',
-  radoniq: 'Liqeni i Radoniqit',
+const ImageTitles = {
+  mirusha: {
+    en: 'Mirusha Waterfalls',
+    sq: 'Ujëvarat e Mirushës',
+  },
+  radoniqi: {
+    en: 'Radoniq Lake',
+    sq: 'Liqeni i Radoniqit',
+  },
+  bjeshket: {
+    en: 'Bjeshkët e Nemuna',
+    sq: 'Bjeshkët e Nemuna',
+  },
+  drini: {
+    en: 'Drin River',
+    sq: 'Lumi Drin',
+  },
 }
 
 export function ImageComparing() {
+  const t = useTranslations('Home')
+  const locale = useLocale()
   const [imageIndex, setImageIndex] = useState(0)
   const [leftVariation, setLeftVariation] = useState<ImageVariation>('default')
   const [rightVariation, setRightVariation] = useState<ImageVariation>('false')
@@ -32,7 +49,7 @@ export function ImageComparing() {
             htmlFor="leftVariation"
             className="block text-light-secondary mb-2"
           >
-            Left Image:
+            {t('left')}:
           </label>
           <select
             id="leftVariation"
@@ -49,8 +66,8 @@ export function ImageComparing() {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4">
-          <h3 className="text-lg md:text-xl text-light-secondary">
-            {ImageTitles[images[imageIndex]]}
+          <h3 className="text-lg md:text-xl text-light-secondary text-center">
+            {(ImageTitles as any)[images[imageIndex]][locale]}
           </h3>
           <div className="flex gap-4 justify-between items-center">
             <button
@@ -87,7 +104,7 @@ export function ImageComparing() {
             htmlFor="rightVariation"
             className="block text-light-secondary mb-2"
           >
-            Right Image:
+            {t('left')}:
           </label>
           <select
             id="rightVariation"

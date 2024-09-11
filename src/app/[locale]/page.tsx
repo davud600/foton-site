@@ -1,8 +1,11 @@
+import { useTranslations } from 'next-intl'
 import { ImageComparing } from '@/components/ImageComparing'
 import { outfit } from '@/utils/fonts'
 import Image from 'next/image'
 
 export default function Home() {
+  const t = useTranslations('Home')
+
   return (
     <>
       <section
@@ -14,24 +17,23 @@ export default function Home() {
             style={outfit.style}
             className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            Inisights from above, and beyond.
+            {t('title')}
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            Revolutionizing agriculture in Kosovo with research and other
-            experimental developments in the natural sciences and engineering.
+            {t('description')}
           </p>
           <div className="flex md:flex-row flex-col justify-center gap-8 w-full my-10">
             <a
-              href="#projects"
+              href="#agro-vision"
               className="bg-transparent border text-center border-color-border-color-primary md:px-10 py-4 md:py-3 text-[15px] text-light-primary font-[500] rounded-md hover:bg-light-primary hover:text-dark-primary transition-all duration-300"
             >
-              Other Action
+              {t('otherAction')}
             </a>
             <a
               href="#services"
-              className="bg-btn-primary text-center md:px-10 py-4 md:py-3 text-[15px] text-light-primary font-[500] rounded-md hover:bg-btn-secondary hvoer:text-dark-secondary transition-all duration-300"
+              className="bg-btn-primary text-center md:px-10 py-4 md:py-3 text-[15px] text-dark-primary font-[500] rounded-md hover:bg-transparent border border-btn-primary hover:text-btn-primary transition-all duration-300"
             >
-              Call To Action
+              {t('callToAction')}
             </a>
           </div>
           <div className="flex justify-center w-full">
@@ -39,7 +41,7 @@ export default function Home() {
               href="#"
               className="text-base text-light-primary font-[500] underline underline-offset-2"
             >
-              Link to redirect to somewhere
+              {t('linkText')}
             </a>
           </div>
         </div>
@@ -63,15 +65,10 @@ export default function Home() {
             style={outfit.style}
             className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            Our Services
+            {t('ourServices')}
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            Our mission is to help farmers drastically increase their
-            crops&apos; health, longevity and yield. We do that by utilizing our
-            custom made UAVs capable of autonomous flight, and combining that
-            with hyperspectral sensors that give us the raw electromagnetic data
-            which we then process with various open source software like QGIS
-            (Quantum Geographical Information System).
+            {t('servicesDescription')}
           </p>
         </div>
         <div className="py-16 mb-12 bg-dark-background-secondary w-full">
@@ -87,13 +84,13 @@ export default function Home() {
                 </svg>
               </span>
               <span className="text-light-primary text-base md:text-lg">
-                Boosting Crop Yields
+                {t('serviceOne')}
               </span>
             </div>
 
             <div className="flex gap-4 items-center justify-center">
               <span className="text-light-primary text-base md:text-lg">
-                Data-Driven Insights
+                {t('serviceTwo')}
               </span>
               <span>
                 <svg
@@ -117,19 +114,22 @@ export default function Home() {
                 </svg>
               </span>
               <span className="text-light-primary text-base md:text-lg">
-                Tailored UAVs for agri-monitoring
+                {t('serviceThree')}
               </span>
             </div>
           </div>
         </div>
-        <div className="ml-auto mr-auto w-[95vw] md:w-[70vw] h-auto relative">
+        <div
+          id="agro-vision"
+          className="ml-auto mr-auto w-[95vw] md:w-[70vw] h-auto relative"
+        >
           <ImageComparing />
         </div>
       </section>
       {/* <section
-        id="projects"
-        className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
-      ></section> */}
+      id="projects"
+      className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
+    ></section> */}
       <section
         id="about"
         className="min-h-[100svh] flex flex-col justify-center items-center w-full bg-dark-background"
@@ -139,17 +139,10 @@ export default function Home() {
             style={outfit.style}
             className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            About Us
+            {t('aboutUs')}
           </h1>
           <p className="animate-scroll-text text-center text-[15px] text-light-secondary">
-            At Foton, we specialize in harnessing cutting-edge drone technology
-            and multispectral imagery to provide valuable insights for
-            agriculture. Our mission is to help farmers make informed decisions
-            and enhance their crop management through precise, data-driven
-            solutions. Based in Kosovo, we are dedicated to improving
-            agricultural practices and contributing to a more sustainable
-            future. Our team is committed to innovation, reliability, and
-            excellence in every flight.
+            {t('aboutDescription')}
           </p>
         </div>
         <div className="py-16 my-16 bg-dark-secondary w-full">
@@ -158,7 +151,7 @@ export default function Home() {
               style={outfit.style}
               className="text-light-secondary font-normal text-xl md:font-[500] md:text-3xl text-center mb-8 tracking-wide !leading-[1.25] md:!leading-[4rem]"
             >
-              Our Team
+              {t('ourTeam')}
             </h2>
             <div className="flex flex-col gap-8 items-start text-lg">
               <div className="flex gap-2 items-center justify-start">
@@ -210,7 +203,7 @@ export default function Home() {
             style={outfit.style}
             className="linear-wipe animate-scroll-text font-normal text-3xl md:font-[500] md:text-5xl text-center my-16 tracking-wide !leading-[1.25] md:!leading-[4rem]"
           >
-            Contact us
+            {t('contactUs')}
           </h1>
           <form action="" method="get" className="flex flex-col gap-6">
             <div className="flex flex-col gap-2 justify-start">
@@ -218,7 +211,7 @@ export default function Home() {
                 htmlFor="email"
                 className="text-[17px] font-[300] text-light-secondary"
               >
-                E-mail Address
+                {t('emailAddress')}
               </label>
               <input
                 type="text"
@@ -232,7 +225,7 @@ export default function Home() {
                 htmlFor="subject"
                 className="text-[17px] font-[300] text-light-secondary"
               >
-                Subject
+                {t('subject')}
               </label>
               <input
                 type="text"
@@ -246,7 +239,7 @@ export default function Home() {
                 htmlFor="message"
                 className="text-[17px] font-[300] text-light-secondary"
               >
-                Message
+                {t('message')}
               </label>
               <textarea
                 name="message"

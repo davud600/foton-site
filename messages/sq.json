@@ -1,0 +1,33 @@
+{
+  "Home": {
+    "title": "Vështrime nga lart dhe përtej.",
+    "description": "Revolucionizimi i bujqësisë në Kosovë me kërkime dhe zhvillime të tjera eksperimentale në shkencat natyrore dhe inxhinieri.",
+    "otherAction": "Vizion Bujqësor",
+    "callToAction": "Shiko të ardhmen",
+    "linkText": "Link to redirect to somewhere",
+    "ourServices": "Shërbimet tona",
+    "servicesDescription": "Misioni ynë është të ndihmojmë fermerët të rrisin në mënyrë drastike shëndetin, jetëgjatësinë dhe rendimentin e të korrave të tyre. Ne e bëjmë këtë duke përdorur UAV-të tona të bëra me porosi të aftë për fluturim autonom dhe duke e kombinuar atë me sensorë hiperspektralë që na japin të dhënat e papërpunuara elektromagnetike të cilat më pas i përpunojmë me softuer të ndryshëm me burim të hapur si QGIS (Sistemi Kuantik i Informacionit Gjeografik).",
+    "serviceOne": "Rritja e rendimenteve të të korrave",
+    "serviceTwo": "Vështrime të drejtuara nga të dhënat",
+    "serviceThree": "UAV-të e përshtatura për agro-monitorim",
+    "aboutUs": "Rreth Nesh",
+    "aboutDescription": "Në Foton, ne jemi të specializuar në shfrytëzimin e teknologjisë së fundit të dronëve dhe imazheve multispektrale për të ofruar njohuri të vlefshme për bujqësinë. Misioni ynë është të ndihmojmë fermerët të marrin vendime të informuara dhe të përmirësojnë menaxhimin e të korrave të tyre përmes zgjidhjeve të sakta, të bazuara në të dhëna. Me bazë në Kosovë, ne jemi të përkushtuar për të përmirësuar praktikat bujqësore dhe për të kontribuar për një të ardhme më të qëndrueshme. Ekipi ynë është i përkushtuar ndaj inovacionit, besueshmërisë dhe përsosmërisë në çdo fluturim.",
+    "ourTeam": "Ekipi ynë",
+    "contactUs": "Na kontaktoni",
+    "emailAddress": "E-mail",
+    "subject": "Subjekti",
+    "message": "Mesazhi",
+    "footer": "Kërkime dhe zhvillime të tjera eksperimentale në shkencat natyrore dhe inxhinieri.",
+    "homeLink": "Home",
+    "servicesLink": "Shërbimet",
+    "projectsLink": "Projektet",
+    "aboutLink": "Rreth Nesh",
+    "contactLink": "Na kontaktoni",
+    "company": "KOMPANIA",
+    "community": "KOMUNITETI",
+    "legal": "LIGJORE",
+    "copyright": "© 2024 Foton LLC, E regjistruar në Kosovë. Të gjitha të drejtat e rezervuara.",
+    "left": "Majt",
+    "right": "Djathtë"
+  }
+}

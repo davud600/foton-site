@@ -1,0 +1,33 @@
+{
+  "Home": {
+    "title": "Insights from above, and beyond.",
+    "description": "Revolutionizing agriculture in Kosovo with research and other experimental developments in the natural sciences and engineering.",
+    "otherAction": "Agricultural Vision",
+    "callToAction": "See the Future",
+    "linkText": "Link to redirect to somewhere",
+    "ourServices": "Our Services",
+    "servicesDescription": "Our mission is to help farmers drastically increase their crops' health, longevity and yield. We do that by utilizing our custom made UAVs capable of autonomous flight, and combining that with hyperspectral sensors that give us the raw electromagnetic data which we then process with various open source software like QGIS (Quantum Geographical Information System).",
+    "serviceOne": "Boosting Crop Yields",
+    "serviceTwo": "Data-Driven Insights",
+    "serviceThree": "Tailored UAVs for agri-monitoring",
+    "aboutUs": "About Us",
+    "aboutDescription": "At Foton, we specialize in harnessing cutting-edge drone technology and multispectral imagery to provide valuable insights for agriculture. Our mission is to help farmers make informed decisions and enhance their crop management through precise, data-driven solutions. Based in Kosovo, we are dedicated to improving agricultural practices and contributing to a more sustainable future. Our team is committed to innovation, reliability, and excellence in every flight.",
+    "ourTeam": "Our Team",
+    "contactUs": "Contact us",
+    "emailAddress": "E-mail",
+    "subject": "Subject",
+    "message": "Message",
+    "footer": "Research and other experimental developments in the natural sciences and engineering.",
+    "homeLink": "Home",
+    "servicesLink": "Services",
+    "projectsLink": "Projects",
+    "aboutLink": "About Us",
+    "contactLink": "Contact Us",
+    "company": "COMPANY",
+    "community": "COMMUNITY",
+    "legal": "LEGAL",
+    "copyright": "© 2024 Foton LLC, Registered in Kosovo. All Rights Reserved.",
+    "left": "Left",
+    "right": "Right"
+  }
+}

@@ -2,8 +2,12 @@
 
 import { useRef } from 'react'
 import Image from 'next/image'
+import { useTranslations, useLocale } from 'next-intl'
+import { Link } from '@/i18n/routing'
 
 export function Header() {
+  const t = useTranslations('Home')
+  const locale = useLocale()
   const mobileLinksContainerRef = useRef<HTMLDivElement | null>(null)
 
   const toggleMobileNav = () => {
@@ -27,17 +31,40 @@ export function Header() {
         <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:flex hidden">
           <Image src="" alt="logo" />
           <div className="flex items-center h-full gap-8 text-[15px]">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Work</a>
-            <a href="#about">About us</a>
+            <a href="#home">{t('homeLink')}</a>
+            <a href="#services">{t('servicesLink')}</a>
+            <a href="#projects">{t('projectsLink')}</a>
+            <a href="#about">{t('aboutLink')}</a>
           </div>
-          <a
-            href="#contact"
-            className="bg-light-primary px-5 py-[0.35rem] text-[15px] text-dark-primary font-[500] rounded-md hover:bg-[#e0e0e0] hvoer:text-dark-secondary transition-all duration-300"
-          >
-            Contact
-          </a>
+          <div className="flex gap-8">
+            <a
+              href="#contact"
+              className="bg-light-primary px-5 py-[0.35rem] text-[15px] text-dark-primary font-[500] rounded-md hover:bg-[#e0e0e0] hvoer:text-dark-secondary transition-all duration-300"
+            >
+              {t('contactLink')}
+            </a>
+            {locale === 'en' ? (
+              <Link href="sq">
+                <Image
+                  src="/icons8-albania-circular-96.png"
+                  alt="Albanian"
+                  className="md:w-8 md:h-8"
+                  width={96}
+                  height={96}
+                />
+              </Link>
+            ) : (
+              <Link href="en">
+                <Image
+                  src="/icons8-usa-96.png"
+                  alt="English"
+                  className="md:w-8 md:h-8"
+                  width={96}
+                  height={96}
+                />
+              </Link>
+            )}
+          </div>
         </div>
 
         {/* Mobile */}
@@ -51,25 +78,48 @@ export function Header() {
               top: '-300px',
             }}
           >
-            <a href="#home">Home</a>
-            <a href="#services">Our Services</a>
-            <a href="#projects">Our Work</a>
-            <a href="#about">About us</a>
-            <a href="#contact">Contact us</a>
+            <a href="#home">{t('homeLink')}</a>
+            <a href="#services">{t('servicesLink')}</a>
+            <a href="#projects">{t('projectsLink')}</a>
+            <a href="#about">{t('aboutLink')}</a>
+            <a href="#contact">{t('contactLink')}</a>
           </div>
-          <button onClick={toggleMobileNav}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="100"
-              height="100"
-              viewBox="0 0 50 50"
-              className="fill-white md:h-6 md:w-6 h-5 w-5"
-            >
-              <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
-            </svg>
-          </button>
+          <div className="flex gap-4">
+            {locale === 'en' ? (
+              <Link href="sq">
+                <Image
+                  src="/icons8-albania-circular-96.png"
+                  alt="Albanian"
+                  className="w-10 h-10"
+                  width={96}
+                  height={96}
+                />
+              </Link>
+            ) : (
+              <Link href="en">
+                <Image
+                  src="/icons8-usa-96.png"
+                  alt="English"
+                  className="w-10 h-10"
+                  width={96}
+                  height={96}
+                />
+              </Link>
+            )}
+            <button onClick={toggleMobileNav}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="100"
+                height="100"
+                viewBox="0 0 50 50"
+                className="fill-white md:h-6 md:w-6 h-5 w-5"
+              >
+                <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </nav>
     </header>

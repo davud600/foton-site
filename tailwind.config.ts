@@ -22,10 +22,10 @@ const config: Config = {
         'dark-background-secondary': '#111111',
         'color-primary': '#1b202c',
         'color-secondary': '#161923',
-        'header-bg': 'rgba(27, 27, 27, .26)',
+        'header-bg': 'rgba(70, 70, 70, .26)',
         'header-border': 'rgba(255, 255, 255, .1)',
         'footer-divider': '#2b2b2b',
-        'btn-primary': '#0266ff',
+        'btn-primary': '#ebeb80',
         'btn-secondary': '#3898ec',
       },
       animation: {
