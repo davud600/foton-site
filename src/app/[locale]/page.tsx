@@ -251,7 +251,7 @@ export default function Home() {
             <div className="flex md:justify-start justify-center w-full">
               <input
                 type="submit"
-                className="bg-btn-primary md:w-auto w-full cursor-pointer text-center md:px-10 py-4 md:py-3 text-base text-light-primary font-[500] rounded-md hover:bg-btn-secondary hvoer:text-dark-secondary transition-all duration-300"
+                className="bg-btn-primary md:w-auto w-full cursor-pointer text-center md:px-10 py-4 md:py-3 text-base text-dark-primary font-[500] rounded-md hover:bg-transparent border border-btn-primary hover:text-btn-primary transition-all duration-300"
               />
             </div>
           </form>

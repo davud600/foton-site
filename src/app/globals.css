@@ -36,8 +36,8 @@ body {
   background: linear-gradient(
     to right,
     #fff 20%,
-    rgb(235, 235, 128) 40%,
-    rgb(235, 235, 128) 60%,
+    #002d2d 45%,
+    #002d2d 55%,
     #fff 80%
   );
   background-size: 200% auto;

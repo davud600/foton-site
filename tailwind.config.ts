@@ -16,7 +16,7 @@ const config: Config = {
       colors: {
         'dark-primary': '#000000',
         'dark-secondary': '#0d0d0d',
-        'light-primary': '#ffffff',
+        'light-primary': '#efefef',
         'light-secondary': '#787878',
         'dark-background': '#181818',
         'dark-background-secondary': '#111111',
@@ -25,8 +25,8 @@ const config: Config = {
         'header-bg': 'rgba(70, 70, 70, .26)',
         'header-border': 'rgba(255, 255, 255, .1)',
         'footer-divider': '#2b2b2b',
-        'btn-primary': '#ebeb80',
-        'btn-secondary': '#3898ec',
+        'btn-primary': '#00ff77',
+        'btn-secondary': '#002d2d',
       },
       animation: {
         fade: 'fadeIn 350ms ease-in-out',

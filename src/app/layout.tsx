@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Foton',
     images: [
       {
-        url: 'https://foton-ks.com/logo.png',
+        url: 'https://foton-ks.com/foton-icon-white.svg',
         width: 1200,
         height: 630,
         alt: 'Foton LLC - Insights from above, and beyond.',

@@ -29,7 +29,13 @@ export function Header() {
       <nav className="animate-fade bg-header-bg border-b-header-border border-b fixed z-20 w-screen top-0 h-[60px] backdrop-blur-lg">
         {/* Desktop */}
         <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:flex hidden">
-          <Image src="" alt="logo" />
+          <Image
+            width={1000}
+            height={1000}
+            className="w-48"
+            src="foton-icon-white.svg"
+            alt="logo"
+          />
           <div className="flex items-center h-full gap-8 text-[15px]">
             <a href="#home">{t('homeLink')}</a>
             <a href="#services">{t('servicesLink')}</a>
@@ -69,7 +75,13 @@ export function Header() {
 
         {/* Mobile */}
         <div className="justify-between items-center px-8 h-full max-w-[1340px] ml-auto mr-auto md:hidden flex">
-          <Image src="" alt="logo" />
+          <Image
+            width={1000}
+            height={1000}
+            className="w-48"
+            src="foton-icon-white.svg"
+            alt="logo"
+          />
           <div
             ref={mobileLinksContainerRef}
             className="flex-col flex w-screen absolute left-0 transition-all duration-300 -z-10 h-[300px] items-center justify-between text-base bg-dark-secondary py-8"

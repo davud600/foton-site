@@ -9,7 +9,13 @@ export function Footer() {
       <div className="justify-between items-center flex flex-col p-3 md:p-8 h-full max-w-[1340px] ml-auto mr-auto">
         <div className="flex md:flex-row flex-col w-full justify-between">
           <div className="flex flex-col md:w-1/2 w-full gap-4">
-            <Image src="" alt="logo" />
+            <Image
+              width={1000}
+              height={1000}
+              className="w-64"
+              src="foton-logo-green-icon-white-text.svg"
+              alt="logo"
+            />
             <span className="text-light-secondary max-w-[35ch] text-[15px]">
               {t('footer')}
             </span>
