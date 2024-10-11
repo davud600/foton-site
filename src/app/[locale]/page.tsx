@@ -36,14 +36,14 @@ export default function Home() {
               {t('callToAction')}
             </a>
           </div>
-          <div className="flex justify-center w-full">
+          {/* <div className="flex justify-center w-full">
             <a
               href="#"
               className="text-base text-light-primary font-[500] underline underline-offset-2"
             >
               {t('linkText')}
             </a>
-          </div>
+          </div> */}
         </div>
       </section>
       <div className="flex justify-center items-center w-full h-full relative bg-dark-background pb-16">

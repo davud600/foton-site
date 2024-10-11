@@ -90,11 +90,21 @@ export function Header() {
               top: '-300px',
             }}
           >
-            <a href="#home">{t('homeLink')}</a>
-            <a href="#services">{t('servicesLink')}</a>
-            <a href="#projects">{t('projectsLink')}</a>
-            <a href="#about">{t('aboutLink')}</a>
-            <a href="#contact">{t('contactLink')}</a>
+            <a className="text-white" href="#home">
+              {t('homeLink')}
+            </a>
+            <a className="text-white" href="#services">
+              {t('servicesLink')}
+            </a>
+            <a className="text-white" href="#projects">
+              {t('projectsLink')}
+            </a>
+            <a className="text-white" href="#about">
+              {t('aboutLink')}
+            </a>
+            <a className="text-white" href="#contact">
+              {t('contactLink')}
+            </a>
           </div>
           <div className="flex gap-4">
             {locale === 'en' ? (
